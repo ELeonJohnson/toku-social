@@ -45,11 +45,7 @@ var Layout = function (_Component) {
   _createClass(Layout, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'home' },
-        'This is my first react component'
-      );
+      return _react2.default.createElement('div', { className: 'home' });
     }
   }]);
 

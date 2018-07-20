@@ -2,6 +2,72 @@
 @import "reset";
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
-   background: red;
+  min-height: 100vh;
+  background: #172368; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #172368 0%, #e249af 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #172368 0%,#e249af 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #172368 0%,#e249af 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1300px;
+  background: white;
+  min-height: calc(100vh - 15vh);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
+
+  #left-menu {
+    border-right: 2px solid #e6e9ef;
+    .account-dropdown {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      padding: 15px;
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fab {
+          font-size: 2rem;
+        }
+      }
+      .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fa-chevron-down {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+
+.groups {
+  padding: 15px;
+  .group {
+    .title {
+      padding: 10px 0;
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    ul {
+      li {
+        color: #818387;
+        font-size: .8rem;
+        padding: 10px 0;
+      }
+    }
+  }
 }

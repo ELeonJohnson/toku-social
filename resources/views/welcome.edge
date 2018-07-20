@@ -3,16 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <title>Hello Adonis</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle"><p>TESTING THE VIEWS</p></div>
+<div class="app-container">
+  <section id="left-menu">
+    <div class="account-dropdown">
+      <div class="logo">
+        <i class="fab fa-typo3"></i>
+      </div>
+      <div class="name">
+        Enoch Johnson
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="groups">
+      <div class="group">
+        <div class="title">Title</div>
+        <ul>
+          <li>Link</li>
+          <li>Link</li>
+          <li>Link</li>
+
+        </ul>
+      </div>
+    </div>
   </section>
-  <div id="app"></div>
-  <script src="/js/components/vendor.js"></script>
-  <script src="/js/components/firstComp.js"></script>
+  <section id="content-area"></section>
+  <section id="messenger"></section>
+
+</div>
+<div id="app"></div>
+<script src="/js/components/vendor.js"></script>
+<script src="/js/components/firstComp.js"></script>
 </body>
 </html>

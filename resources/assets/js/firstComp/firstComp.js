@@ -13,7 +13,7 @@ class Layout extends Component {
   }
   render () {
     return (<div className='home'>
-        This is my first react component
+        
       </div>)
   }
 }
