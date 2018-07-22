@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
+
+  <title>Toku</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -59,7 +60,7 @@
       </div>
     </div>
     <div class="content-area">
-      <div class="compose-section">
+      <section class="compose-section">
         <textarea name="name" rows="8" cols="80"></textarea>
         <div class="user-img"></div>
         <div class="buttons">
@@ -72,14 +73,66 @@
           <div class="button send-btn">
             <i class="fas fa-paper-plane"></i>
           </div>
-        </div>
+        </section>
       </div>
+      <section id="updates">
+        <div class="update-container">
+          <div class="author-info">
+            <a href="#" class="user-img"></a>
+            <div class="info">
+              <a href="#">Jane Doe</a>shared a <a href="#">story</a>
+            </div>
+          </div>
+          <div class="media">
+            <div class="image" style="background: url('https://statree.com/wp-content/uploads/2017/11/inspiration.png');"></div>
+          </div>
+          <div class="padding-container">
+          <div class="grey-container">
+            <div class="update-info">
+              <h3>How to become a developer</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="update-stats">
+              <div class="icon-section">
+                <div class="like-circle">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+              </div>
+              <div class="other-users">
+                Cleo Mist and 23 others
+                liked update
+              </div>
+              <div class="comments-stats">
+                4 comments
+              </div>
+            </div>
+            <div class="compose-comment">
+              <textarea name="name" rows="8" cols="80"></textarea>
+              <div class="buttons">
+                <div class="repost-btn">
+                  <i class="fas fa-redo"></i>
+                </div>
+                <div class="like-btn">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </section>
     </div>
   </section>
   <section id="messenger"></section>
-
 </div>
-<div id="app"></div>
+
+
+
 <script src="/js/components/vendor.js"></script>
 <script src="/js/components/firstComp.js"></script>
 </body>
