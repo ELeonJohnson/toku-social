@@ -80,7 +80,7 @@ body {
 
 #content-container {
   overflow: hidden;
-  height: 900px;
+  height: 800px;
 
   .content-area {
     box-sizing: content-box;
@@ -383,4 +383,142 @@ body {
 
 #messenger {
   background: $darksideBlue;
+  height: 800px;
+  overflow: hidden;
+
+  .messener-header {
+    box-shadow: 0 0 15px -3px #1b1b1b;
+    display: flex;
+    height: 53.33px;
+    background: linear-gradient(to right, rgba(1,120,255,1) 0%, rgba(50,173,255,1) 100%);
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+
+    .messenger-icon {
+      height: 33.33px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 20%;
+      padding-left: 15px;
+    }
+    .title {
+      width: 50%;
+      color: white;
+      text-transform: capitalize;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .options-icon {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 15px;
+    }
+  }
+
+  .users {
+  //  padding: 20px 15px;
+    height: calc(800px - 131.33px);
+    overflow: hidden;
+
+    .users-container {
+      box-sizing: content-box;
+      padding: 0 15px;
+      overflow: auto;
+      height: 100%;
+      width: 100%;
+    }
+
+    .user {
+      display: flex;
+      padding: 10px 0;
+
+
+      &.active {
+        .user-img {
+          opacity: 1;
+        }
+
+        .username {
+          font-weight: 700;
+          color: white;
+        }
+
+       .conversation {
+          display: flex;
+        }
+      }
+
+
+      &:hover {
+        cursor: pointer;
+
+        .user-img {
+          opacity: 1;
+        }
+        .username {
+          font-weight: 700;
+          color: white;
+        }
+      }
+      .user-img {
+        opacity: .8;
+        transition: all .5s ease-in-out;
+        width: 20%;
+      }
+
+      .username {
+        width: 60%;
+        transition: all .5s ease-in-out;
+        padding-left: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #99ccff;
+        font-weight: 300;
+        font-size: .9rem;
+      }
+      .conversation {
+        width: 20%;
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+      }
+    }
+
+  }
+
+  .search {
+    background: $searchBG;
+    padding: 20px 15px;
+
+    input[type="text"] {
+      width: 100%;
+      background: $searchInputBG;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      padding: 10px;
+      color: white;
+
+      &::placeholder {
+        color: #78b3ef;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
