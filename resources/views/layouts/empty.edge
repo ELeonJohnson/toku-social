@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>
+    @!section('title')
+  </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="app-container
+  @!section('current-class')
+" style="
+  @!section('custom-style-app-container')
+  ">
+    @!section('content')
+
+</div>
+
+
+
+
+
+<script src="/js/components/vendor.js"></script>
+<script src="/js/components/firstComp.js"></script>
+
+</body>
+</html>
