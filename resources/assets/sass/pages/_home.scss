@@ -1,4 +1,6 @@
 .app-container.home-page {
+  display: grid;
+  grid-template-columns: 15% 65% 20%;
   #left-menu {
     border-right: 2px solid #e6e9ef;
     .account-dropdown {
