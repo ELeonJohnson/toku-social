@@ -14,4 +14,34 @@ Toku - Register
 
 @section('content')
 
+  <div class="auth-form">
+    <h1>Toku</h1>
+    <form action="/register" method="POST" class="default-form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" value="" class="text">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" value="" class="text">
+      </div>
+      <div class="form-group">
+        <label for="password">Confirm Password:</label>
+        <input type="password" name="conform_password" value="" class="text">
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+     <hr>
+      <a href="/login"> Remebered info? Login here</a>
+    </form>
+  </div>
+
+  <div class="side-img">
+
+  </div>
+
+
+
+
 @endsection
