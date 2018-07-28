@@ -3,9 +3,8 @@
 @import "variables";
 @import "pages/welcome.scss";
 @import "pages/home.scss";
-@import "auth/login.scss";
-@import "auth/register.scss";
-@import "auth/forgotPassword.scss";
+@import "auth/auth.scss";
+
 
 * {
   box-sizing: border-box;
@@ -71,6 +70,7 @@ textarea {
 
 .default-form {
   button {
+    cursor: pointer;
     min-width: 100%;
     min-width: 200px;
     font-size: 1.2rem;

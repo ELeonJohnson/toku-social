@@ -47,7 +47,7 @@
         justify-content: center;
         margin-bottom: 10px;
         cursor: pointer;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
         &:hover {
           background: black;
           color: white;
@@ -67,6 +67,8 @@
       }
       .email-btn {
         border: 1px solid black;
+        text-decoration: none;
+        color: $htext;
       }
     }
   }

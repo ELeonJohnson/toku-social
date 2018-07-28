@@ -1,0 +1,107 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows: auto 500px 200px auto;
+    grid-auto-rows: minmax(200px, auto);
+    grid-gap: 15px;
+}
+
+
+//Sticky Navbar Styling
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.box-1 {
+  background: 	#4d5665;
+  grid-column: 1/13;
+  grid-row: 1/2;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+
+
+  nav {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    a {
+      color: white;
+      padding: 5%;
+
+    }
+  }
+}
+
+.box-2 {
+  grid-column: 10/13;
+  background: yellow;
+  padding: 20px;
+}
+
+.box-3 {
+  grid-column: 1/7;
+  background: purple;
+  padding: 20px;
+}
+
+.box-4 {
+  background: blue;
+  grid-column: 1/10;
+  grid-row: 2/3;
+  padding: 20px;
+}
+
+.box-5 {
+  grid-column: 1/13;
+  background: orange;
+  padding: 20px;
+}
+
+.box-6 {
+  background: grey;
+  grid-column: 7 / 13;
+  grid-row: 3 / 4;
+  padding: 20px;
+}
