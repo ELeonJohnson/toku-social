@@ -17,9 +17,10 @@ Toku - Register
   <div class="auth-form">
     <h1>Toku</h1>
     <form action="/register" method="POST" class="default-form">
+      {{csrfField()}}
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" name="email" value="" class="text">
+        <input type="text" name="email" value="" class="text">
       </div>
       <div class="form-group">
         <label for="password">Password:</label>
@@ -27,7 +28,7 @@ Toku - Register
       </div>
       <div class="form-group">
         <label for="password">Confirm Password:</label>
-        <input type="password" name="conform_password" value="" class="text">
+        <input type="password" name="confirm_password" value="" class="text">
       </div>
       <div class="form-group">
         <button type="submit">Register</button>

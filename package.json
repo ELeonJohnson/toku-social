@@ -32,6 +32,7 @@
     "@adonisjs/lucid": "^5.0.4",
     "@adonisjs/session": "^1.0.25",
     "@adonisjs/shield": "^1.0.6",
+    "@adonisjs/validator": "^5.0.3",
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
