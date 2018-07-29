@@ -30,17 +30,40 @@
       display: block;
     }
 
-
     form {
       min-width: 350px;
       max-width: 400px;
+    }
+    .register-btn {
+      cursor: pointer;
+      width: 100%;
+      min-width: 200px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      border-radius: 4px;
+      padding: 10px 0;
+      color: white;
+      background: white;
+      color: #1b1b1b;
+      border: 1px solid #1b1b1b;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 1rem;
+
+      &:visited {
+        color: #1b1b1b;
+      }
+      &:hover {
+        background: #1b1b1b;
+        color: white;
+      }
     }
   }
   .side-img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c391a28620658e1a99824868a8e00566&auto=format&fit=crop&w=1050&q=80');
+    background-image: url("https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c391a28620658e1a99824868a8e00566&auto=format&fit=crop&w=1050&q=80");
     height: 100%;
   }
 }

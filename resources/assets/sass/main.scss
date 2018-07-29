@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Galada|Roboto:100,300,400,400i,500,500i,700');
+@import url("https://fonts.googleapis.com/css?family=Galada|Roboto:100,300,400,400i,500,500i,700");
 @import "reset";
 @import "variables";
 @import "pages/welcome.scss";
 @import "pages/home.scss";
 @import "auth/auth.scss";
-
 
 * {
   box-sizing: border-box;
@@ -14,12 +13,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100vh;
   background: #172368; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #172368 0%, #e249af 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #172368 0%,#e249af 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #172368 0%,#e249af 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    -45deg,
+    #172368 0%,
+    #e249af 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #172368 0%,
+    #e249af 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #172368 0%,
+    #e249af 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .app-container {
@@ -31,7 +42,6 @@ body {
   overflow: hidden;
   border-radius: 15px;
 }
-
 
 input:focus,
 select:focus,
@@ -52,7 +62,7 @@ input.text {
 }
 
 label {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   margin-bottom: 1rem;
   display: block;
@@ -68,7 +78,7 @@ textarea {
   font-size: 1.2rem;
 }
 
-.default-form {
+.auth-form {
   .error-box {
     display: none;
     background: $red;
@@ -88,20 +98,45 @@ textarea {
   }
   button {
     cursor: pointer;
-    min-width: 100%;
+    width: 100%;
     min-width: 200px;
     font-size: 1.2rem;
     font-weight: 300;
     border-radius: 4px;
     padding: 10px 0;
     color: white;
-    background: rgba(50,173,255,1);
-    background: -moz-linear-gradient(top, rgba(50,173,255,1) 0%, rgba(1,120,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(50,173,255,1)), color-stop(100%, rgba(1,120,255,1)));
-    background: -webkit-linear-gradient(top, rgba(50,173,255,1) 0%, rgba(1,120,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(50,173,255,1) 0%, rgba(1,120,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(50,173,255,1) 0%, rgba(1,120,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(50,173,255,1) 0%, rgba(1,120,255,1) 100%);
+    background: rgba(50, 173, 255, 1);
+    background: -moz-linear-gradient(
+      top,
+      rgba(50, 173, 255, 1) 0%,
+      rgba(1, 120, 255, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      left bottom,
+      color-stop(0%, rgba(50, 173, 255, 1)),
+      color-stop(100%, rgba(1, 120, 255, 1))
+    );
+    background: -webkit-linear-gradient(
+      top,
+      rgba(50, 173, 255, 1) 0%,
+      rgba(1, 120, 255, 1) 100%
+    );
+    background: -o-linear-gradient(
+      top,
+      rgba(50, 173, 255, 1) 0%,
+      rgba(1, 120, 255, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      top,
+      rgba(50, 173, 255, 1) 0%,
+      rgba(1, 120, 255, 1) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(50, 173, 255, 1) 0%,
+      rgba(1, 120, 255, 1) 100%
+    );
     border-color: #0099ff;
   }
 }
@@ -110,7 +145,7 @@ textarea {
   display: none;
 
   &.welcome {
-    background: #4BB543;
+    background: #4bb543;
     position: fixed;
     top: 20px;
     right: 20px;
