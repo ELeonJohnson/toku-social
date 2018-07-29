@@ -23,26 +23,43 @@ class AuthController {
     if(request.input('password') == request.input('confirm_password')) {
       //Check If it Fails Validation
       if(validation.fails()) {
-        // session
-        //   .withErrors(validation.messages())
-        //   .flashExcept(['password'])
-        //
-        // return response.redirect('back')
+        session
+          .withErrors(validation.messages())
+          .flashExcept(['password'])
 
-        return `error: there is a problem with the email you used`
+        return response.redirect('back')
       } else {
+        // Save User To Database
         try {
           let newUser = await User.create({
             email: request.input('email'),
             password: request.input('password')
           })
         } catch(error) {
-          consoloe.log('error')
-          return 'problems with database'
+          // Show Errors If There Is A Problem With The Database
+          console.log('error')
+          session
+            .withErrors([
+              {field: 'database', message: 'problem with database, try later'},
+            ])
+            .flashExcept(['password'])
+
+          return response.redirect('back')
         }
-        return `validation passed`
+        session.flash({notification: 'Welcome to Toku'})
+        return response.redirect('/home')
+
       }
     } else {
+      // Show Errors If Passwords Do Not Match
+      session
+        .withErrors([
+          {field: 'password', message: 'need to confirm password'},
+          {field: 'confirm_password', message: 'need to confirm password'},
+        ])
+        .flashExcept(['password'])
+
+      return response.redirect('back')
       return `error: passwords do not match`
   }
 }
